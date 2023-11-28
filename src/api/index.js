@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const url =
-  "http://127.0.0.1:5000/homeworks";
+  "https://fastapi2vercel2023.vercel.app/homeworks";
 
 export const getHomeWorks = async () => {
    try {
