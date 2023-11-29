@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Home from "./pages/Home";
 import Search from "./pages/Search";
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <HelmetProvider context={{}}>
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />}/>
@@ -18,7 +18,7 @@ function App() {
           <Route path="resume" element={<Resume />} />
           <Route path="homeworks/id/:id" element={<HomeWork />}/>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </HelmetProvider>
   );
 }

@@ -17,9 +17,8 @@ function HomeWork() {
   }
 
   useEffect(() => {
-    if(homework === null)
-      getHomeWorkData(id);
-  });
+    getHomeWorkData(id);
+  }, []);
 
   const add404Img = (ev) => {
     ev.target.src = notFoundImg
